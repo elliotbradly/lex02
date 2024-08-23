@@ -1,0 +1,11 @@
+//01 emotional: ecstasy, love, amazement, vigilance
+//01 emotional: grief, loathing, raging, terror
+
+ecstasy : joy,  01 emotional, joy with peace
+vigilance : focus, 01 emotional,  anticipation with interest
+terror : fear , 01 emotional,  fear with apprehension
+raging : rage, 01 emotional, anger with annoyance
+loathing : loath, 01 emotional, disgust with boredom
+grief : grif,  01 emotional, sadness with pensiveniss
+amazement : amaze, 01 emotional, surprise with distraction
+love : luv, 01 emotional, trust with acceptance

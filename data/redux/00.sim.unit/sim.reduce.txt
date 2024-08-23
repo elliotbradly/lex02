@@ -1,0 +1,15 @@
+import * as clone from "clone-deep";
+import * as Act from "./{{=it.nom}}.action";
+import { {{=it.title}}Model } from "./{{=it.nom}}.model";
+import * as Buzz from "./{{=it.nom}}.buzzer";
+import State from "../00.core/state";
+
+export function reducer(model: {{=it.title}}Model = new {{=it.title}}Model(), act: Act.Actions,  state?: State ) {
+  switch (act.type) {
+    case Act.{{=it.wakeActionKey}}:
+      return Buzz.write{{=it.title}}(clone(model), act.bale, state);
+
+    default:
+      return model;
+  }
+}

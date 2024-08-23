@@ -1,0 +1,1 @@
+export { write{{=it.title}}  } from "./buz/{{=it.nom}}.buzz";

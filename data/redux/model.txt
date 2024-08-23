@@ -1,0 +1,13 @@
+import Model from "./interface/model/model.interface";
+
+{{=it.modelDefine}}
+
+export default class UnitData implements Model {
+  auto: number = 0;
+
+  rootData: string = "../data";
+  localData: string = "./data";
+
+  {{=it.modelDeploy}}
+
+}

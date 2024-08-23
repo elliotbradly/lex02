@@ -1,0 +1,10 @@
+export const PRESS_LEFT = "[press action] Left";
+export const PRESS_RIGHT = "[play action] Right";
+export const PRESS_DOWN = "[sim action] Down";
+export const PRESS_UP = "[sim action] Up";
+export const PRESS_ACT0 = "[sim action] Act0";
+export const PRESS_ACT1 = "[sim action] Act1";
+export const WHEEL_UP = "[sim action] Wheel Up";
+export const WHEEL_DOWN = "[sim action] Wheel Down";
+export const MOUSE_UP = "[sim action] Mouse Up";
+export const MOUSE_DOWN = "[sim action] Mouse Down";

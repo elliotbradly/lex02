@@ -1,0 +1,102 @@
+import State from "./state";
+import Line from "./line";
+
+{{=it.unitImport}}
+
+import PathProcess from "./process/path.process";
+import { Inject } from "../../../node_modules/typescript-ioc/es5";
+
+import * as doT from "dot";
+import * as S from "string";
+
+export default class Beeing {
+  line: Line;
+  value: any;
+
+  @Inject private path: PathProcess;
+  state: State;
+  private imports: Array<any> = [
+    {{=it.unitList}}
+    ];
+
+  constructor() {
+    this.state = new State();
+    this.line = new Line();
+    this.imports.forEach(i => new i(this.line, this.state));
+
+    this.state.select("title.path").subscribe(val => this.line.route(val));
+
+    this.value = this.state.value;
+  }
+
+  private doTCompiled;
+ 
+  power = ( val: string, mth?: string,  dat?: any) => {
+    if (mth == null) mth = "create";
+
+    var list = val.split("\n");
+
+    if (dat != null) {
+      list.forEach((a, b) => {
+        //a = S(a).replaceAll(",", "*").s;
+        if (a == null) return;
+        this.doTCompiled = doT.template(a);
+        list[b] = this.doTCompiled(dat);
+      });
+    }
+
+    list.forEach(a => {
+      if (a.length <= 3) return;
+      if (S(a).contains("//")) return; //true
+
+      var dom = a.split(":")[0];
+      if (dom == null) return;
+      dom = S(dom).collapseWhitespace().s;
+      var sub = a.split(":")[1];
+      if (sub == null) return;
+      sub = S(sub).collapseWhitespace().s;
+
+      //console.log("dom " + dom);
+      //console.log("sub " + sub);
+
+      var comma = sub.split(",");
+      comma.forEach((e, f) => {
+        comma[f] = S(e).collapseWhitespace().s;
+      });
+
+      var age = {
+        idx: comma[0]
+      };
+
+      //console.log(age.idx + " idx to work " + age.idx.length);
+
+      var type = "";
+      comma.forEach((a, b) => {
+        if (b == 0) return;
+        //if (b % 2 == 1) console.log("dom: " + a);
+        if (b % 2 == 1) type = a;
+        //if (b % 2 == 0) console.log("sub: " + a);
+        if (b % 2 == 0) age[type] = a;
+        //if (b % 2 == 0) console.log("midling " + age[type]);
+      });
+
+      //console.log("age " + JSON.stringify(age));
+
+      if (age.idx != null) age.idx = S(age.idx).collapseWhitespace().s;
+
+      this.deem(dom, mth, age);
+    });
+  };
+
+  hark = (key: string) => {
+    return this.state.hark(key);
+  };
+
+  move = (type: string, bale?: any) => this.path.move(this.state, type, bale);
+
+  deem = (pth: string, mth?: string, dat?: any, spd?: number) => {
+    //console.log('send patth: ' + pth );
+    if (pth.includes("/") == false) pth = pth + "/index";
+    this.path.link(this.state, pth, mth, dat, spd);
+  };
+}

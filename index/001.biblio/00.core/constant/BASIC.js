@@ -1,0 +1,20 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AWAKE = "awake";
+exports.CREATE = "create";
+exports.COPY = "copy";
+exports.CLOSE = "close";
+exports.DELETE = "delete";
+exports.INIT = "init";
+exports.LIST = "list";
+exports.LOAD = "load";
+exports.MAKE = "make";
+exports.QUE = "que";
+exports.OPEN = "open";
+exports.READ = "read";
+exports.REPLACE = "replace";
+exports.REMOVE = "remove";
+exports.RESIZE = "resize";
+exports.UPDATE = "update";
+exports.WRITE = "write";
+//# sourceMappingURL=BASIC.js.map

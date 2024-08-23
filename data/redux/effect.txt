@@ -1,0 +1,12 @@
+
+{{=it.reduceDefine}}
+
+export const reducer: any = {
+    {{=it.reduceList}}
+};
+
+{{=it.spinDefine}}
+
+export const spinner: any = {
+    {{=it.spinList}}
+};

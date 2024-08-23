@@ -1,0 +1,8 @@
+import { {{=it.title}}Model } from "../{{=it.nom}}.model";
+import {{=it.title}} from "../fce/{{=it.nom}}.interface";
+import State from "../../00.core/state";
+
+
+export const write{{=it.title}} = (cpy: {{=it.title}}Model, bal: {{=it.title}}, ste: State) => {
+  return cpy;
+};

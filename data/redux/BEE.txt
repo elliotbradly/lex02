@@ -1,0 +1,35 @@
+import TitleUnit from "./00.core/title/title.unit";
+import Model from "./00.core/interface/model.interface";
+
+import Title from "./00.core/title/fce/title.interface";
+import { TitleModel } from "./00.core/title/title.model";
+
+import * as reduceFromTitle from "./00.core/title/title.reduce";
+
+{{=it.unitImports}}
+//import BeginUnit from "./01.begin.unit/begin.unit";
+
+{{=it.faceImports}}
+//import Begin from "./01.begin.unit/fce/begin.interface";
+//import { BeginModel } from "./01.begin.unit/begin.model";
+
+export const list: Array<any> = {{=it.unitList}}
+
+{{=it.reduceImports}}
+//import * as reduceFrombegin from "./01.begin.unit/begin.reduce";
+
+export const reducer: any = {
+  title: reduceFromTitle.reducer,
+  {{=it.reduceList}}
+};
+
+export default class UnitData implements Model {
+  auto: number = 0;
+
+  rootData: string = "../data";
+  localData: string = "./data";
+
+  title: Title = new TitleModel();
+  //begin: Begin = new BeginModel();
+  {{=it.modelList}}
+}

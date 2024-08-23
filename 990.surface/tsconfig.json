@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig-base.json",
+  "compilerOptions": {
+    // compiler options
+    "outDir": "../dist/990.surface",
+    "composite": true,
+    "skipLibCheck": true,
+    "esModuleInterop": false
+  },
+  "include": ["**/*"],
+  "exclude": ["**/node_modules"]
+}

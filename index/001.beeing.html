@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>001.beeing</title>
+
+    <link href="./css/001.beeing.css" rel="stylesheet" />
+    <link href="./css/spectre.min.css" rel="stylesheet" />
+
+    <style>
+      html,
+      body {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      #renderCanvas {
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+      }
+    </style>
+
+    <style>
+      @font-face {
+        font-family: "ManMachine";
+        src: url("./fnt/VoiceActivatedBB_reg.otf");
+      }
+
+      .manMachine {
+        font-family: "ManMachine";
+      }
+    </style>
+
+    <style>
+      textarea {
+        background: linear-gradient(
+          33deg,
+          darkred,
+          midnightblue,
+          indigo,
+          midnightblue,
+          darkred
+        );
+        border: 1px solid yellow;
+        box-sizing: border-box;
+        color: gold;
+        font-family: "ManMachine", monospace;
+        font-size: 1.33rem;
+        margin-top: 13px;
+        min-width: 100%;
+        outline: none;
+        padding: 7px;
+        resize: none;
+        transition: background, border 2100ms ease-out;
+        width: 100%;
+        height: 100%;
+      }
+
+      #fps {
+        position: absolute;
+        background-color: black;
+        border: 2px solid yellow;
+        text-align: center;
+        font-size: 16px;
+        color: yellow;
+        top: 15px;
+        right: 10px;
+        width: 60px;
+        height: 20px;
+      }
+
+      .nav {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 55px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+        background-color: #ffffff;
+        display: flex;
+        overflow-x: auto;
+      }
+
+      input[type="text"] {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        font-size: 33px;
+        padding-left: 20px;
+        font-family: "ManMachine";
+        color: yellow;
+        background-color: black;
+        border-color: yellow;
+      }
+
+      body::-webkit-scrollbar {
+        width: 12px; /* width of the entire scrollbar */
+      }
+      body::-webkit-scrollbar-track {
+        background: orange; /* color of the tracking area */
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: blue; /* color of the scroll thumb */
+        border-radius: 20px; /* roundness of the scroll thumb */
+        border: 3px solid orange; /* creates padding around scroll thumb */
+      }
+    </style>
+
+    <style>
+      #renderCanvas {
+        width: 100%;
+        height: 100%;
+        touch-action: none;
+      }
+
+      .glow {
+        -webkit-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, 0.75);
+        -moz-box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, 0.75);
+        box-shadow: 0px 0px 15px 5px rgba(255, 255, 190, 0.75);
+      }
+    </style>
+
+    <style>
+      #fps {
+        position: absolute;
+        background-color: yellow;
+        border: 2px solid yellow;
+        text-align: center;
+        font-style: bold;
+        font-size: 16px;
+        color: black;
+        top: 3px;
+        right: 3px;
+        width: 20px;
+        height: 20px;
+        font-family: "ManMachine", monospace;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+        border: 2px solid black;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body id="body" class="scanlines neon light" style="background-color: gold;">
+    <header
+      id="navbar"
+      class="navbar"
+      style="margin-top: 18px; margin-left: 30px; margin-right: 30px;"
+    >
+      <section class="navbar-section">
+        <button class="btn btn-lg">large button</button>
+        <button class="btn btn-lg">large button</button>
+      </section>
+      <section class="navbar-center">
+        <button class="btn btn-lg btn-block">large button</button>
+      </section>
+      <section class="navbar-section">
+        <button class="btn btn-lg">large button</button>
+        <button class="btn btn-lg">large button</button>
+      </section>
+    </header>
+
+    <div id="surface" class="neon glow">
+      <div class="hero hero-lg bg-primary">
+        <div class="hero-body">
+          <h1>Hero title</h1>
+          <p>This is a hero example</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="fps">X</div>
+
+    <script src="./001.beeing.js"></script>
+  </body>
+</html>

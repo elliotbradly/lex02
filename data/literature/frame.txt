@@ -1,0 +1,357 @@
+var Bot = function () {
+
+  var self = new PIXI.Container();
+
+  var Vibrant = require('node-vibrant')
+  var PNG = require('pngjs').PNG;
+  var convert = require('color-convert');
+
+  var pb = {};
+  var stage = null;
+
+  var canvas;
+  var ctx;
+
+  var buff = 10;
+  var h = 722;
+  var w = 720;
+
+  var list = []
+
+  var style00 = new PIXI.TextStyle(require('../../local/sty/myth-00.json'));
+  var style01 = new PIXI.TextStyle(require('../../local/sty/myth-01.json'));
+
+  var style02 = new PIXI.TextStyle(require('../../local/sty/voice-00.json'));
+  var style03 = new PIXI.TextStyle(require('../../local/sty/voice-01.json'));
+  var style04 = new PIXI.TextStyle(require('../../local/sty/voice-02.json'));
+
+  var awake = () => {
+
+    SIGH.removeListener(E.AWAKE_ART, awake);
+
+    SIGH.on(E.FETCH_STAGE_COMPLETE, stageComplete)
+    TICK(() => SIGH.emit(E.FETCH_STAGE))
+    SIGH.on(E.CLEAR, clear)
+    SIGH.on(E.LOC, fetchClr)
+
+    setTimeout(test, 333)
+  }
+
+  var test = () => SIGH.emit(E.LOC, 'Hofstra', "In black and gold", '000-000-000/001', 720, 800)
+
+  //000-000-000/00014
+  var fetchClr = (loc0, loc1, img, sizeW, sizeH, mod) => {
+
+    if (sizeW != null) w = sizeW;
+    if (sizeH != null) h = sizeH;
+
+    if (w < 555) w = 555;
+
+    var imgPath = './local/img/' + img + '.png';
+    Vibrant.from(imgPath).getSwatches((err, pal) => spin(err, pal, loc0, loc1, img, mod))
+  }
+
+  var spin = (err, pal, loc0, loc1, img, mod, drk) => {
+
+    var lineColor = pal.DarkVibrant.rgb;
+    lineColor = parseInt("0x" + convert.rgb.hex(lineColor[0], lineColor[1], lineColor[2]));
+
+    var eyeColor = pal.LightVibrant.rgb;
+    eyeColor = parseInt("0x" + convert.rgb.hex(eyeColor[0], eyeColor[1], eyeColor[2]));
+
+    var frameColor = pal.Vibrant.rgb;
+    frameColor = parseInt("0x" + convert.rgb.hex(frameColor[0], frameColor[1], frameColor[2]));
+
+    var textColor = pal.DarkMuted.rgb;
+    textColor = "#" + convert.rgb.hex(textColor[0], textColor[1], textColor[2]);
+    style00.fill = ["#000000", textColor];
+    style02.fill = ["#000000", textColor];
+    style03.fill = ["#000000", textColor];
+    style04.fill = ["#000000", textColor];
+
+    var panelColor = pal.Muted.rgb;
+    panelColor = parseInt("0x" + convert.rgb.hex(textColor[0], textColor[1], textColor[2]));
+    panelColor = frameColor;
+
+    var bgColor = pal.LightMuted.rgb;
+    bgColor = parseInt("0x" + convert.rgb.hex(bgColor[0], bgColor[1], bgColor[2]));
+
+    var group = new PIXI.Container();
+    var center = new PIXI.Container();
+    var panel = new PIXI.Graphics();
+    var frame0 = new PIXI.Graphics();
+    var frame1 = new PIXI.Graphics();
+    var frame2 = new PIXI.Graphics();
+
+    var bar0 = new PIXI.Graphics();
+    center.addChild(bar0)
+
+    var bar1 = new PIXI.Graphics();
+    center.addChild(bar1)
+
+    var imgHold = new PIXI.Container();
+    center.addChild(imgHold)
+
+    var titleBG = new PIXI.Graphics();
+    center.addChild(titleBG)
+    titleBG.y = 35;
+
+    var detail = new PIXI.Graphics();
+    center.addChild(detail)
+
+    var titleMSK = new PIXI.Graphics();
+    center.addChild(titleMSK)
+
+    var timeBG = new PIXI.Graphics();
+    center.addChild(timeBG)
+    timeBG.y = 135;
+
+    var pillEnd0 = new PIXI.Graphics();
+    center.addChild(pillEnd0)
+
+    var pillEnd1 = new PIXI.Graphics();
+    center.addChild(pillEnd1)
+
+    var eye0 = new PIXI.Graphics();
+    eye0.lineStyle(0); // draw a circle, set the lineStyle to zero so the circle doesn't have an outline
+    eye0.beginFill(eyeColor, .35);
+    eye0.drawCircle(0, 0, 10);
+    center.addChild(eye0)
+
+    var eye1 = new PIXI.Graphics();
+    eye1.lineStyle(0); // draw a circle, set the lineStyle to zero so the circle doesn't have an outline
+    eye1.beginFill(eyeColor, .35);
+    eye1.drawCircle(0, 0, 8);
+    center.addChild(eye1)
+
+    var eye2 = new PIXI.Graphics();
+    eye2.lineStyle(0); // draw a circle, set the lineStyle to zero so the circle doesn't have an outline
+    eye2.beginFill(eyeColor, .35);
+    eye2.drawCircle(0, 0, 6);
+    center.addChild(eye2)
+
+    var eye3 = new PIXI.Graphics();
+    eye3.lineStyle(0); // draw a circle, set the lineStyle to zero so the circle doesn't have an outline
+    eye3.beginFill(eyeColor, .35);
+    eye3.drawCircle(0, 0, 10);
+    center.addChild(eye3)
+
+    var eye4 = new PIXI.Graphics();
+    eye4.lineStyle(0); // draw a circle, set the lineStyle to zero so the circle doesn't have an outline
+    eye4.beginFill(eyeColor, .35);
+    eye4.drawCircle(0, 0, 8);
+    center.addChild(eye4)
+
+    var eye5 = new PIXI.Graphics();
+    eye5.lineStyle(0); // draw a circle, set the lineStyle to zero so the circle doesn't have an outline
+    eye5.beginFill(eyeColor, .35);
+    eye5.drawCircle(0, 0, 6);
+    center.addChild(eye5)
+
+    var locTxt0 = new PIXI.Text(loc0, style00);
+    locTxt0.x = 20;
+    locTxt0.y = 35;
+    center.addChild(locTxt0)
+
+    var locTxt1 = new PIXI.Text(loc1, style03);
+    locTxt1.x = 40;
+    locTxt1.y = 63;
+    center.addChild(locTxt1)
+
+    var endSizeW = locTxt1.width;
+    if (locTxt0.width > locTxt1.width) endSizeW = locTxt0.width + 33;
+    endSizeW += 40;
+
+    var endSizeH = locTxt0.height + locTxt1.height;
+
+    titleBG.beginFill(bgColor);
+    titleBG.drawRect(0, 0, endSizeW, endSizeH);
+    titleBG.endFill()
+
+    bar0.beginFill(eyeColor);
+    bar0.drawRect(0, 0, endSizeW, 3);
+    bar0.endFill()
+
+    bar0.y = titleBG.y + endSizeH;
+
+    detail.beginFill(eyeColor);
+    detail.drawCircle(0, 0, 5);
+    detail.endFill()
+    detail.y = bar0.y - 10;
+    detail.x = 27;
+
+    pillEnd0.lineStyle(0); // draw a circle, set the lineStyle to zero so the circle doesn't have an outline
+    pillEnd0.beginFill(bgColor, 1);
+    pillEnd0.drawCircle(0, 0, endSizeH * .5 + 3);
+    pillEnd0.endFill();
+    pillEnd0.x = endSizeW;
+    pillEnd0.y = titleBG.y + endSizeH * .5;
+
+    eye0.x = pillEnd0.x;
+    eye0.y = pillEnd0.y - 10;
+
+    eye1.x = eye0.x + 12;
+    eye1.y = eye0.y + 18;
+
+    eye2.x = eye1.x - 20;
+    eye2.y = eye1.y + 2;
+
+    var now = FORMAT(NOW())
+    now = now.split(',')
+    var part1 = [now[0], now[1]]
+    part1 = part1.join(',')
+
+    var part2 = now[2].split(' ')
+    var timeNow = part2[1]
+    timeNow = timeNow.split(':')
+    timeNow[0] = PAD(timeNow[0], 2)
+    timeNow = timeNow.join(':')
+
+    var subNow = part2[2]
+
+    var nowTxt2 = new PIXI.Text(part1, style04);
+    nowTxt2.x = w - nowTxt2.width - 10;
+    nowTxt2.y = h - nowTxt2.height - 36;
+    center.addChild(nowTxt2)
+
+    var nowTxt0 = new PIXI.Text(timeNow, style02);
+    nowTxt0.x = w - nowTxt2.width - 40;
+    nowTxt0.y = h - nowTxt0.height - 48;
+    center.addChild(nowTxt0)
+
+    var nowTxt1 = new PIXI.Text(subNow, style04);
+    nowTxt1.x = nowTxt0.x + nowTxt0.width + 5;
+    nowTxt1.y = nowTxt0.y + 3;
+    center.addChild(nowTxt1)
+
+    style04.fill = ["#000000", "#000000"];
+    style02.fill = ["#000000", "#000000"];
+
+    var nowTxt2b = new PIXI.Text(part1, style04);
+    nowTxt2b.x = w - nowTxt2b.width - 10;
+    nowTxt2b.y = h - nowTxt2b.height - 36;
+    nowTxt2b.alpha = .13;
+    center.addChild(nowTxt2b)
+
+    var nowTxt0b = new PIXI.Text(timeNow, style02);
+    nowTxt0b.x = w - nowTxt2b.width - 40;
+    nowTxt0b.y = h - nowTxt0b.height - 48;
+    nowTxt0b.alpha = .13
+    center.addChild(nowTxt0b)
+
+    var nowTxt1b = new PIXI.Text(subNow, style04);
+    nowTxt1b.x = nowTxt0b.x + nowTxt0b.width + 5;
+    nowTxt1b.y = nowTxt0b.y + 3;
+    nowTxt1b.alpha = .13
+    center.addChild(nowTxt1b)
+
+    var timeSizeW = nowTxt2.width;
+    timeSizeW += 20;
+
+    var timeSizeH = nowTxt0.height + nowTxt1.height + 3;
+
+    timeBG.beginFill(bgColor);
+    timeBG.drawRect(0, 0, timeSizeW, timeSizeH);
+    timeBG.endFill()
+
+    timeBG.x = w - timeSizeW;
+    timeBG.y = h - timeSizeH - 33;
+
+    bar1.beginFill(eyeColor);
+    bar1.drawRect(0, 0, timeSizeW, 3);
+    bar1.endFill()
+
+    bar1.x = timeBG.x - 6;
+    bar1.y = timeBG.y + timeSizeH;
+
+    pillEnd1.lineStyle(0); // draw a circle, set the lineStyle to zero so the circle doesn't have an outline
+    pillEnd1.beginFill(bgColor, 1);
+    pillEnd1.drawCircle(0, 0, endSizeH * .5);
+    pillEnd1.endFill();
+    pillEnd1.x = nowTxt0.x + 8;
+    pillEnd1.y = timeBG.y + timeSizeH * .5;
+
+    eye3.x = pillEnd1.x;
+    eye3.y = pillEnd1.y - 10;
+
+    eye4.x = eye3.x - 8;
+    eye4.y = eye3.y + 18;
+
+    eye5.x = eye4.x + 20;
+    eye5.y = eye4.y - 2;
+
+    panel.beginFill(panelColor);
+    panel.drawRoundedRect(0, 0, w, h, 30);
+    panel.endFill();
+    group.addChild(panel)
+    group.addChild(center)
+
+    titleMSK.beginFill(0xDE3249);
+    titleMSK.drawRoundedRect(0, 0, w, h, 30);
+    titleMSK.endFill();
+
+    frame2.lineStyle(6, frameColor, 1);
+    frame2.drawRoundedRect(2, 2, w - 4, h - 4, 30);
+    frame2.endFill();
+    group.addChild(frame2)
+
+    frame0.lineStyle(2, lineColor, 1);
+    frame0.drawRoundedRect(0, 0, w, h, 30);
+    frame0.endFill();
+    group.addChild(frame0)
+
+    frame1.lineStyle(1, lineColor, 1);
+    frame1.drawRoundedRect(5, 5, w - 10, h - 10, 30);
+    frame1.endFill();
+    group.addChild(frame1)
+
+    var imgSRC = './local/img/' + img + '.png';
+    var data = FS.readFileSync(imgSRC);
+    var png = PNG.sync.read(data);
+
+    var ratio = w / png.width;
+
+    imgSRC = './img/' + img + '.png';
+    var tex = PIXI.Texture.fromImage(imgSRC);
+    var img = new PIXI.Sprite(tex);
+    img.width = png.width * ratio;
+    img.height = png.height * ratio;
+
+    img.y = h * .5 - img.height * .5;
+    if (mod != null) img.y += mod;
+
+    imgHold.addChild(img)
+
+    img.mask = titleMSK;
+
+    var center = (800 * .5) - (w * .5)
+
+    group.x = center;
+    group.y = buff;
+
+    self.addChild(group)
+
+  }
+
+  var clear = () => {
+
+    list.forEach((a, b) => {
+      self.removeChild(a);
+      list[b] = null;
+    })
+
+    list = [];
+  }
+
+  var stageComplete = (s) => {
+    SIGH.removeListener(E.FETCH_STAGE_COMPLETE, stageComplete)
+    stage = s;
+    stage.addChild(self)
+  }
+
+  SIGH.on(E.AWAKE_ART, awake);
+
+  return self;
+};
+
+exports = module.exports = Bot;

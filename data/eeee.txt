@@ -1,0 +1,106 @@
+var addressOpen = (val) => {
+  if (val == null) return;
+
+  var PNG = require("pngjs").PNG;
+  var FS = require("fs-extra");
+
+  //var colors = {
+  //  red: '#f00',
+  //  yellow: '#ff0',
+  //  blue: '#00f'
+  //};
+
+  var smell = [];
+
+  var clr = FS.readJsonSync("./data/color/colornames.json");
+  var colors = {};
+
+  for (var key in clr) {
+    colors[clr[key].name] = clr[key].hex;
+  }
+
+  var nearestColor = require("nearest-color").from(colors);
+
+  // ket us land the plane safely
+
+  var clrs = FS.readJsonSync("./data/color/colornames.json");
+
+  //  var hehHe = FS.readdirSync('"./');
+
+  //BLack
+
+  //Negro Live$ Matter
+  var colorType =
+    //return console.log("colors " + colors);
+
+    FS.createReadStream("./data/ikon/000.png")
+      .pipe(
+        new PNG({
+          filterType: 4,
+        })
+      )
+      .on("parsed", function () {
+        for (var y = 0; y < this.height; y++) {
+          //if (y < 100) break;
+          for (var x = 0; x < this.width; x++) {
+            var idx = (this.width * y + x) << 2;
+
+            //if (x < 100) break;
+
+            // invert color
+            var r = (this.data[idx] = 255 - this.data[idx]);
+            var g = (this.data[idx + 1] = 255 - this.data[idx + 1]);
+            var b = (this.data[idx + 2] = 255 - this.data[idx + 2]);
+
+            // console.log("red " + r);
+
+            var convert = require("color-convert");
+
+            var hex = convert.rgb.hex(r, g, b); // [ 35, 0, 98, 0 ]
+            //console.log(hex);
+
+            var love = "#" + hex;
+
+            //convert.rgb.cmyk.raw(167, 255, 4);
+
+            var kiss = nearestColor(love);
+            // console.log("kiiss " + kiss);
+
+            //   FS.ensureFileSync("./data/secerts.txt");
+
+            //    var think = FS.readFileSync("./data/secerts.txt")
+            //       .toString()
+            //        .split("/n");
+
+            //  think.push(kiss);
+
+            //  FS.writeFileSync("./data/secerts.txt", think.join("\n"));
+
+            //sim.sml.push(kiss);
+            smell.push(kiss);
+            //console.log("leg " + smell.length);
+
+            // and reduce opacity
+            this.data[idx + 3] = this.data[idx + 3] >> 1;
+          }
+        }
+
+        sim.sml = smell;
+
+        //console.log("add smeel " + sim.sml);
+
+        sim.render();
+        console.log("Glop Open for Business " + smell.length);
+
+        setInterval(sim.render, 555);
+
+        //this.pack().pipe(fs.createWriteStream("out.png"));
+      });
+
+  console.log("dawms early light");
+
+  // const socket = io("http://localhost:3000");
+
+  // socket.on("message", (socket) => {
+  //   console.log("dupont");
+  //});

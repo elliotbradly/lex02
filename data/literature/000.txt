@@ -1,0 +1,697 @@
+i mean what even happens 
+you have a title screen
+then you have an image 
+then you have some text 
+and some buttons
+
+first of all you have pivot
+pivot can be a noun 
+or a verb 
+
+
+
+as i review the code 
+i see scenes
+a scene a group of plots
+
+i see plots
+a plot is a group of segments and beats
+
+i see segments
+a segement is a group of verses
+
+i see verses
+the difference between code and text 
+
+all of these things need to come out of the simulation
+
+something about a witch named bodi 
+who is shunned by a 
+you could start with a location
+
+the question is what are you going to render out with your mind
+
+
+
+
+sigh and spin 
+let us begin 
+sigh or spin 
+
+did we just pass through
+
+bee.hike(HikeV.TIMELINE, B.READ);
+
+  var card: CardBit = { idx: "000" };
+  bee.hike(HikeV.TIMELINE, B.CREATE, card);
+
+  var card: CardBit = { idx: "001" };
+  bee.hike(HikeV.TIMELINE, B.CREATE, card);
+
+  var item0: CardItemBit = {
+    idx: "000",
+    title: "Chapter Zero",
+    image: "000",
+    //  titlesub: "layer",
+    body: "Let us begin",
+    choice: [
+      { idx: "000", label: "sigh", data: { more: "suffering" } },
+      { idx: "001", label: "spin", data: { strong: "normal" } },
+    ],
+  };
+
+  bee.hike(HikeV.TIMELINE, B.ADD, item0);
+
+  setTimeout(() => {
+    var item1: CardItemBit = {
+      idx: "000",
+      title: "Chapter Zero",
+      image: "000",
+      //  titlesub: "layer",
+      body: `
+      What is Lorem Ipsum?
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+
+Where does it come from?
+Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+      `,
+      choice: [
+        { idx: "000", label: "sigh", data: { more: "suffering" } },
+        { idx: "001", label: "spin", data: { strong: "normal" } },
+      ],
+    };
+
+    bee.hike(HikeV.TIMELINE, B.ADD, item1);
+  }, 3333);
+
+
+
+
+you must wake up before six
+it is impreative you do htis 
+you an even type forcrectly any more 
+oh my fasodh you lhow tererible your tyeping sikils habve becomer y
+you shtngn so bee it 
+must me ming bye brain is jstufj totally rottnento the core now 
+of hwell get sgethe snitoachh l it slj ther e ockisng 'ing hweruug 
+hthere llgethsbutsr glstuss dehat here 
+'dshfeljr d jss=eomgtht  here ljdf  dfdjf amama m
+sudke s well at lese you got soemhgitng gong here h
+where ot beging first 
+the beely the messed up beely 
+where did the beely go rrong 
+
+
+
+simo 00 :
+simo 01 :
+simo 02 :
+simo 03 :
+
+
+simo 00 00 : churching , horizon 
+simo 01 00 : inputing , pikachuchu 
+simo 00 00 00 : lightening, molten-ice
+simo 00 00 01 : note taking, mist
+simo 00 00 01 : note taking, iced 
+simo 00 00 01 : visiting , fountain-frolic
+simo 00 00 01 : visiting , upbeat
+
+00 00 plt : bed making 
+00 01 plt : tooth brushing
+00 02 plt : weeping 
+
+
+sizzling 
+Who made me so bad
+timing 
+inputting 
+weeping 
+booming 
+buzzing
+doodling
+cruddling 
+procratinating 
+philbustering 
+drawing 
+filling 
+working 
+twerking 
+thinking 
+walking 
+speaching 
+driving 
+collecting 
+wishing 
+picking 
+feeling 
+touching 
+judging 
+caressing 
+flopping 
+mopping 
+hoping 
+wishing 
+praying 
+eating 
+drinking 
+smoking 
+flipping 
+turing 
+spinning 
+twisting 
+turning 
+basking 
+hacking 
+running 
+working 
+flexing 
+sharping 
+building 
+making 
+cutting 
+moving 
+comprimising 
+negotiating 
+buying 
+honing 
+protecting 
+learning 
+providing 
+growling 
+figuring 
+piping 
+building 
+mastering 
+crafting 
+whittling 
+craving 
+making 
+learning 
+training 
+painting 
+cutting 
+trusting 
+popping 
+killing 
+thrusting 
+cracking 
+smacking 
+waking
+thrashing 
+groping 
+looking 
+winking 
+blinking 
+twisting 
+saying
+lieing 
+speaking 
+listening 
+smelling 
+tasting 
+hearing 
+cooking 
+backing
+cracking 
+crackling 
+smothering 
+finishing 
+beginning 
+middling 
+fastening 
+flattening 
+airing 
+flaulating 
+hemmoring 
+disgusting 
+shaving 
+gloating 
+trolling 
+training 
+cutting 
+vetting 
+cranking 
+microwaving 
+beating 
+sweeping 
+fixing 
+selling 
+buying 
+skating 
+surfing 
+faththering 
+mothering 
+fanning 
+burning 
+banning 
+egging 
+aiding 
+abedding 
+entrusting 
+untrusting 
+watching 
+bossing 
+hogging 
+bogging 
+endocturnating 
+willing 
+wheeling 
+dragging 
+flagging 
+draining 
+jumping 
+yawing 
+burping 
+farting 
+computing 
+sleeping 
+dreaming 
+feuding 
+shoeing 
+basking 
+mooing 
+marinating 
+marbling 
+rubberizing 
+bronzing 
+cooling 
+heating 
+belly aching 
+tiring 
+pooping 
+urinated 
+exfolinating 
+mezmirizing 
+rejuvinating 
+refridgerating 
+freezing 
+modeling 
+crying 
+smiling 
+laughing 
+happening 
+drooling 
+tearing 
+craddling 
+swinging 
+scaling 
+leaning 
+handling 
+flowing 
+drowning 
+capturing 
+gargiling 
+shaving 
+pecking
+lighting 
+waxing 
+wayning 
+exasperating 
+wearing 
+smashing 
+sitting 
+dashing 
+mashing 
+crashing 
+flashing 
+bashing 
+gashing 
+splashing
+blazing 
+racking 
+crapping 
+gaming 
+going 
+grasping 
+gasping 
+gulping 
+regurtating 
+nerding 
+carpeting 
+plumbing
+watering 
+changing 
+chastiing 
+bending 
+blasting 
+flicking
+flittering ( phoronataction)
+fouring 
+opening
+skinning 
+hunting 
+mining 
+grazing 
+knodding 
+rolling 
+reaping 
+rearing 
+guessing 
+gutting 
+clasping 
+clinging 
+clerking 
+knighting 
+ghost busting 
+voting 
+changing 
+loathing 
+moaning 
+winning 
+streching 
+dragging 
+hitching 
+climbing 
+clamming 
+splicing 
+refrigerating 
+populating 
+planting 
+pousterizing 
+singing 
+dancing 
+pronoucing 
+postulating 
+womanizing 
+icing 
+closing 
+clobberating 
+sunning 
+soaring 
+scrapping 
+titlating 
+flapping 
+flinging 
+shooting 
+scrammbling 
+scratching 
+scrooging 
+bearing 
+swearing 
+flaring 
+giggling 
+hanginig 
+flailing 
+fasting 
+sinking 
+shopping 
+shaming 
+electrocuting 
+shocking 
+mailing 
+trailing 
+nailing 
+playing
+blinding 
+blistering 
+camoflouging 
+wasting 
+deteriating 
+daming 
+measuring 
+firing 
+balancing 
+ringing 
+texting 
+trashing 
+encouring 
+dying 
+breaking 
+toasting 
+taming 
+canning 
+sparking 
+letting 
+daring
+doing 
+lasting 
+caring 
+
+
+
+
+
+rain light coming down from the south
+pulpwood mcquiag is connected to the herd 
+sun eater 
+sassy 
+boss hog 
+pretty girl 
+
+
+
+
+//greasi gets out of bed and spits in bowl 
+//a splatter of red on pearlware 
+
+
+Infidelity is definitely not a cup of tea for playable character Vincent Brook, who is in a happy relationship with a beautiful girl called Katherine. When Catherine with a C makes an appearance, he is torn up by his complicated feelings for both women — until the bubbly piano player Rin, short for Qatherine, also joins the party. Her presence has an immediate effect on Vincent and the rest of you:
+
+"Rin! You're here!" Vincent says. "I thought I was going to die." He looks at you as if expecting some sort of reward or praise, but instead you just nod. "Well, that's good," he continues, smiling. "You were right about me dying last night when we played The Rite Of Spring."
+What about the Rite of Spring? Well, it's a song that plays when you play the game's music box (or rather, when you press the button on top of it). Vincent had heard it before during one of your many rants about how pointless the whole thing was. It made him think about his dead wife again. And then he started thinking about her while playing this stupid game.
+
+Vincent seems to be having fun with all this… Until Rin comes back into the room.
+"Rin, do you know what you are doing", asks Vincent. "I mean, are you sure that this is what you want?"
+"What is it?" You quickly ask, but it seems he only wants to talk to her.
+"Rin, it could be dangerous."
+
+Quick!
+"What kind of danger are you referring to when you speak of danger," asks Vincent. "I may have an answer for you."
+"I'm not sure if my word is good enough, I have already lied to you once, but it's still your decision."
+But that should be an easy choice for her. Information is power!
+"But what is it?" You continue to insist, but Fenrir puts his hand on your shoulder in a calming way.
+Should you show them the way out of here, or will that most likely result in your doom?
+The lest find a way out of here. That's not the answer that Fenrir wants, but desperate times calls for desperate measures. Fenrir yawns and picks you up from your seat as its easy for him. "That's what everyone does... Makes it all boring..."
+"The scent of bakery is so thick here! Someone must have a bakery or something around here! Let's hope we find one soon," Lucy complains.
+"i am so hungry," speaks Vincent. He complains, not realizing how good he has it, with not being worried about his next meal anymore at all.
+You turn on the flashlight that was in your pocket as you walk along a seemingly never-ending corridor. "It doesn't seem to end. Maybe we should turn back and try another way."
+"Are you kidding me?" Lucy complains once again.
+"Yeah, let us turn back"
+"No, it's right ahead. If we just keep going, then we'll find it."
+"When did you figure that out?" "I don't know, I just had a feeling!"
+You slowly start to walk once again. The smell is overwhelming at this point. You really hope that you find...
+Out of absolutely no where, a ghost suddenly flies into you and the flashlight goes flying.
+Vincent pulls out the costume of a Ghostbuster and gets to work. 
+"I am not afraid of any ghost," he shouts as he gets to work on the poltergeist infestation. 
+"They can't hurt me," Lucy remarks, and then asks you if you would like to get something to eat for this eventful day.
+"Once i finish this then we can go eat some bread from the bread i make from busting this ghost". The trap is laid and the ghost begins to swirl around the trap. It goes right in, and the barrier closes in on it.
+"True." you say, and you get to work studying a map they have of the manor.
+You start to think of ways you could escape.
+"i know, let us go out the front door." So then, after the ghost is trapped, you and Lucy start to walk off.
+"Hey, where are you two going?" "Out," you simply say.
+You and Lucy don't stop to look back. You're about to get out of the hallway when something unexpected happens...
+The chandler falls from the ceiling crashing right in front of your faces. A giant alligator man drops from the hole the beautiful work just existed a few moments before. The beast starts to roar as spit and acid start flying from it's mouth. You're too close to the creature and his gaze is locked onto you. The smell of the beast is horrible.
+"HALT!" you hear a weird echo coming from something you can't see. The alligator man suddenly stops, and turns back into a human man. Vincent drops to the floor with what seems to be... expectantly -- a net gun. He catches the now unconscious form of the chandler.
+the net gun fires catching the reptile man in its snare. The couple begins to make their way toward a door in the back.
+suddenly you're blinded by a bright light...
+it is the sun. You have escaped into a cemetery full of graves. Have you made it out alive? or ...
+Are you just beginning the story?
+
+"You are one tough cookie," Lucy claps, finishing the book. The book itself is well worn and loved, with obviously much read time. But Lucy's sister couldn't be more proud. Siting on the couch, she reaches into her pocket, pulling out two pennies for you to take as a prize. You happily accept them before making your way to the door.
+The value of the pennies rest upon the premise you're allowed to keep them. 1, if you don't get to keep them because you lose them in some way. 2, if you get to keep them after Tricky's game has ended, 3 if the saintly Lucy gives them as a gift out of appreciation for what you've done for her this day..
+You rather quickly put the coins in your pockets and you run out the door.
+The Beeing mansion is still under renovation and the Beeing family has going on vaction so you will not need to be concerned about anything other than Tricky's game for now.
+You make your way to where you keep the safe, unopened and undisturbed in an old oak tree you riddled on years ago with your grandfather's rifle. (Even tree branches have memories). You open up the unlocked safe and search for your flash light before making your way back to the mansion, determined as ever to find out if that old house has some dark secrets hidden away in it somewhere.
+You heard about one dark secret, the secret of outliving someone...
+You turn on your flashlight and begin to make your way into the mansion through the newly formed hole in the wall you made years before. It seems that the Beeing's professional renovation crew have stolen most of the smaller objects easier to grab, but at least they left you with an easier entry point. You're soon walking down the hall, your flashlight cutting through the darkness like a knife.
+You seem to be in luck.
+The item you have been searching for is in front of you and the name of the item is "SOUL". It's sitting on an end table, in fact it seems to be the only thing within ten feet that hasn't been destroyed. There is a chain leash tied to it with a large amount of slack and what you're guessing is a collar round the items neck. You walk towards it, careful not to trip over the many small trinkets that seem discarded everywhere about the floor.
+You pick it up and inspect it for any signs of... well anything really.
+It sold for and extreme amount once during an art auction. How much to it go for again oh yes 44 million dollars...
+As you inspect, it you think about radio stations. Stations that dance in the air freely at a frequency only you could hear before getting caught up in tape decks and car stereos for everyone to enjoy. You turn it over and inspect the face of it. It's quite beautiful, depicting an old man staring off into the horizon but made entirely of psychedelic colors that almost seem to make the world around you... Warmer.
+Dang, thought Vincent this stuff really does work. I doubted it at first but now i think I am beginning to understand. God what do you want me to know?
+You hear a rumbling outside, as if the grinding of gears hundreds of times too large for the size of the vehicle carrying them. A giant monster no doubt. The final emergence from an enclosed container about to unleash itself upon new sights and sounds. Perhaps to fulfill a vendetta it has been nurturing since birth or to feed a hunger as old as time. What will you do Vincent with this new information.
+The grinding continues, the rumbling grows louder.
+"What" I am too lazy to fight another monster can you do something else with it. Perhaps turn it up to 11?
+I see know this is the beast but if provides so much novelty that i wondered if you could destroy it before my heart destroys itself. the monster wanders into the room and begins to tear the beast apart and then we can talk business after we drink the pain away.
+I'm still not quite sure who this "I" you keep referring to is, but I think I now understand... And you're insane for a "god".
+Wierd and wierd you become. Maybe i can just not worry about the pronunciation and just move on. 
+the monster is now destroyed in a clack of metal and the the loud boom of a falling skyscraper. Let us get out of here and move to somewhere more comfortable. The Dr's at the hospital will know what to do with your leg and I will not tell them what happened just say I fell or something. There is still Nowhere else you need to be right?
+I admit I had planned on going to camp david today, but there is always tomorrow...
+The rumbling grows quiet and you can hear the joyous screams of children playing as the tramcar brings you through the entrance to Disneyland.
+Yeah i am almost done. One more challenge to go. The challenge of humanity itself.
+Well uh thanks for saving me from eternal torment and likely death, mind helping a fellow out in the same way you helped me?
+Sure just tell me what you need.
+I don't really know I am color blind so my ideas might not be the best, also my balance isnt the best either meaning i would prefer something indoors, I don't have much money either so that is a limit to what I can do.
+Gracious is there any thing you can do at all.
+Oh you want the originality contest again? Same rules apply. Now make with the pictures and descriptions.
+I need something that represents "Motherhood" what does it mean to you?
+It means the womb and everything in it. What does it mean to you?
+Works for me.
+Ok let the contest begin. How many artist will we have this year? I can't tell if it's the blind man or just the late starters with their opening ceremonies.
+Now you see what you meant about my bad balance? You lead a pretty sheltered life if you don't recognize the feeling of having a rocket pushing against your back all the time.
+whoa with the colorful language and electromagnetic field emanating from that one with the red cape and white crowbar. I don't think she would like it if you classified her as a "rocket".
+and there is the voice of reason, perfect sedative for a nervous crush. I should know I have been crushing on her forever it seems.
+Yes she is prettiest of the bunch. You seem so much more intelligent than me.
+Shh don't let her hear that, her ego is big enough already, being around her 24/7 can make even the toughest Titans nervous. So what's on your mind today "Celestial" Wouldn't have anything to do with a certain someone?
+Nah she is out of your league and captain Canada pants over there is in love with her soo... (sounds of electrical shock) Ouch! oww! I was helping you out!
+Why do i feel so bad bringing God into the converstaion. You are in a weird mood today. (another ouch) You need to learn some coping skills.
+Everything from the past few days has finally caught up with my knowledge of this crazy new world of superheros and it's ramifications.
+Why don't you go back to the ones who knew you from before, they at least cared about you, even if they made you, and then pine for you everyday.
+What do you mean pine for me everyday? Tell me more!
+They wish to control you. Your breath is a threat.
+They are you friends, they wouldn't hurt a fly.
+How do you know this? You don't know what a fly is.
+It's a saying for such a small thing that can give people such a powerful sting if angered or scared enough. But these humans would kill many flies without a second thought just because they can. Maybe even eat them as well.
+That's horrible! I am going to... (zap) Ouch!
+Dang stop poping me into the lightbulb socket.
+How about talking with some one who knows you through and through, no secrets and bandages just the purest of cores. We could delve in to those question that have fueled your curiosity since childhood! The mysteries of life! Where do we come from? Where are we going after death? What is the meaning of life? Don't pretend like these things haven't crossed your mind at least once.
+Beating. Dancing. Loving. Chasing. Hunting. Growing. Hiding. Waiting. Killing. Watching. Screaming. Singing. Painting. Killing. Teaching. Learning. Freeing. Caging. Killing.
+Be careful what you wish for, you just might get it and then some!
+Loving. Hugging. Kissing. Rubbing. Laughing. Smiling. Caring. Feeding. Growing. Breeding. Teaching. Creeping. Cheating. Killing.
+My purpose is to provide string and woodwind instruments for the gods. I also play the lute a bit myself, though I'll never get good at it, just enough to entertain some of the other villagers one or twice but nothing like that demon musician in Rask can do! Who was the fool that said music sooths the soul? It enrages mine!
+Playing. Listening. Spraying. Updating. Scheming. Traveling. Guiding. Slaying. Hindering. Sighing. Wailing. Dying. Burying. Feeding. Growing. Marrying. Hiding. Plotting. Killing. Teaching. Leading. Finding. Choosing. Striking
+And now my turn...
+Popping. Typing. Ending. Breaking. Tearing. Shredding. Leaking. Spilling. Wailing. Changing. Spilling. Caring. Stopping. Striking. Lying. Hurting. Killing. Dying.
+Freeing. Hearing. Travelling. Building. Tempting. Teaching. Feeding. Bleeding. Waking. Saving. Killing. Chanting. Hunting
+Singing. Roaring. Kissing. Soiling. Sleeping. Killing. Feeding. Bleeding...
+Where did you come from? I awoke to myself one day, realizing after the previous... performers left, that I had music pouring out of me!
+Pouring. Leaving. Changing. Moving. Treading. Teasing. Tempting. Loving. Teaching. Learning. Travelling. Staying. Leaving. Waking Up. Dying
+Tell me about one of your songs
+I have many but do you wish to hear about the first one I ever wrote for the humans in Rask, Oh but that's a silly story, it was I who inspired myself!
+Hey cut the crap, what do you mean?
+Crapping? I'm not sure what you're talking about, I just messaged you the truth. That first song I performed for the people of Rask was amazing, but I had to make a show for the humans as they can't hear my thoughts so it was quite belabored for me. Anyways once I began playing and singing my sad tale of loss and love in harmony while accompanying myself with wild felt emotions thr...
+Hey stop getting off topic! What do you mean inspired yourself?
+Inspiring myself? I was playing one day in the forest and felt something weird while playing, like a voice telling me to keep going. It wasn't until later when I was showing my parents that I got the crowd response that I knew I had talent, but only since then did I feel like something was pushing me to keep playing. What do you mean?
+Never mind, continue.
+So after my moment of inspiration came to me throughout my anger a brand new world of music called to me!
+Calling. Listening. Traveling. Finding. Leaving. Remaining. Relaxing. Chilling. Escaping. Creeping...
+Well what else have you written?
+I've wrote hundreds of songs since, composing and playing songs about my shifts in mood whenever they happen!
+Shifting. Falling. Changing... Happy? Scared? Mad? Happy! Falling! Yelling! Screaming! Creaking...
+Hey wait, do you know anyone by the name of Ke...
+Knowing. Seeing. Meeting. Running. Hiding...
+Sigh... No, no, no! Don't you dare hang up the phone!
+Hanging. Going. Parting. Flying...
+Goodbye writer guy... or whatever your name is, I have to go now as inspiration has struck again!
+Innovation. Music. Composition. Failure. Quiting... Creaking... Screaming! Falling! Running Away... Creaking... Loud... STOP! Happy? Sad?
+Saddening... Happy... Falling... Screaming... Dying... Silence...
+-Click
+Just as I had feared, the phone went dead. I grabbed paper and pen and began to write down Keira's spoken words as fast as I could, and although I managed to write them all down while the phone was still connected I seemed to miss one or two of the sequences of letters that made up each word. Oh well, at least most of it is legible. But what did it mean?
+Meaning... Full... Moonlight... Thirst......
+A knock on the door to my office breaks me out of my thoughts. I look at the clock and see that class should have been over ten minutes ago. I gather up the tape and what I wrote and head towards the door.
+Dani is standing just outside the door with her hand raised prepared to knock again. Apparently she was trying to get my attention. "You busy?"
+Trying to hide the tape and my notes from her view, I put on a fake smile. "Of course not, please come in." I say as I hold the door open for her.
+"Is something wrong?" She asks.
+"What could be wrong?" I remark with the same uneasy smile.
+Just then Dani begins to smile also. She looks nervous and is trying to look me in the eyes, but can't seem to do so without looking away first.
+Smiling, she takes a step towards me and puts one hand on my chest and another on my shoulder. Then, in the closest possible proximity to intimacy that we could be, she hugs me and whispers in my ear "I missed you".
+Feeling extremely awkward and extremely uneasy about the situation I push her away gently and tell her that we can talk about it during dinner. What was she thinking?
+To my astonishment, Dani readily agrees and backs off.
+Backing off she says "Alright, but only because I can see you're busy." With those words she turns around and leaves my office without another word.
+What was that all about? Especially since this morning when I was in class she seemed to be a little distant. Actually scratch that, she was downright cold at times! Even though it was winter and freezing in the mornings, she would sit in the seat next to me with her coat and scarf on.
+Sitting in her cold seat she would constantly turn and face the board, instead of turning her chair towards me as she always does. It seemed quite obvious that she was making a point by doing this, but of course I did not understand it and so I did not address it.
+Maybe now that I had seen her initial panic after class ended, that meant something had came up and was really important.
+Seeing as Dani was pretty much the only thing on my mind right now, taking a break was out of the question until I thought of exactly what to do about her behavior. I wanted to tell her about my girlfriend, but I had neglected to do so because what if it didn't work out between us? It would be awkward for Dani to suddenly not be in my life and I had just gotten her back.
+But why the sudden cold shoulder?
+Hurting me and expressing that by giving the silent treatment seemed out of character. For one thing, Dani always had a problem with filtering herself before saying something really stupid or just out right offensive. I know she cursed from time to time but it was rare for her use any sort of vulgar language, yet alone something as extreme as swearing.
+Pacing through my limited area, I ran through several what-if scenarios in my head.
+Sorting out my thoughts I started to get a headache and I would need to clear my mind before thinking anymore.
+Looking outside the window, night had already fallen and I never noticed when Dani left. That by itself always puzzled me. With my lifestyle of staying up until sunrise, I never paid attention to what time it was at night.
+Staying up all night had become somewhat of a routine for me and probably never would change. I've tried going to bed early once or twice but would end up getting restless around midnight and would end up staying up anyway. Sleeping was boring and I could think of much better ways to spend my time.
+But ever since Dani had gotten back into my life, she seemed really intent on pushing me to sleep at a regular human hour.
+sleeping at night is good for you and you need your beauty sleep
+I had used the old Netflix excuse not once, but twice on her. Although lately I had simply been ditching her after school. Not really meaning to of course, it's just when conversation with her would start to die down, that's when I would feel some sort of alarm in the back of my head telling me it was time to go home.
+Going to the club behind her back seemed a little too much for me, especially when she was obviously trying to make up with me. That would be just low, even for me. As much as it would help clear my mind and give me time to think of how to break the news to her, I decided against it seeing as I should probably try to figure out a less destructive way of managing stress.
+trying to clean my room ?
+Anyway it didn't matter now. Since she gave me the silent treatment, I had no way of reaching her to find out what was wrong and how I could fix it since I really had no idea. On top of that confusion, annoyance started to set in.
+How dare she not speak to me? What gave her that right after all I've done for her?
+Doing my best to calm down, I tried to convince myself that it was just a misunderstanding and that if I just stayed calm long enough, she would have to speak to me and then everything would be back to normal between us. Don't I wish.
+After succumbing to sleep out of pure boredom, I woke up in the morning only to find that Dani still hadn't talked to me. At this point I sort of lost it. Just out completely lost it.
+Losing your temper with Dani wasn't exactly the worst thing ever, but it was definitely one of the more foolish things you could do. I'd call what happened a product of having an overly active hormones that came with being a teenager but that would be ignoring the fact that I was well past my teenage years.
+Waking up and finding Dani doing the exact same thing she was doing the previous day gave me enough evidence to jump to the worst conclusion that I, being me, of course chose to run with.
+First I bombarded her with questions.
+"Why haven't you spoken to me?""Are you mad at me?""What did I do wrong this time?"
+She ignored every single one and kept her gaze glued to her book. When silence didn't work I resorted to vulgarity.
+Cussing only seemed to work in new and interesting ways that I didn't even know were possible with only one person. With each word she grew angrier, but her silence persisted.
+In a last dying effort I grabbed her shoulders, held her in place and demanded to know what was going on with her. Dani simply frowned looked at me emotionlessly and began to speak.
+"nothing is wrong."
+Her response confused me so I shook my head no and repeated my previous question.
+"Did I do something wrong"
+"No."
+"Are you mad at me"
+"No."
+I let go of her shoulders and took a step back following my question. It was pretty apparent something was eating at her, and I needed to get to the bottom of it.
+Dani began to squirm under my gaze so I narrowed my eyes in an attempt to reinforce that she needed to tell me what was wrong.
+Telling Dani to tell me what was wrong was a big mistake. Insecurity is a cruel master and it made me blurt out the worst thing possible in this situation.
+"If you aren't mad, and you aren't upset then why have you been ignoring me?" I asked in an irritated tone trying to conceal my own embarrassment at my outburst.
+Dani's frown deepened as her cheeks turned red.
+Coloring was a very bad sign, Dani only blushed when she was angry rather than sad. I immediately tried to back pedal and apologize for my words.
+"Dani calm down it's ok just-"
+Dani didn't let me finish as she turned on her heel and stormed past me to sit down on the couch next to Harriet
+"Dani! Dani come on let's talk about this"
+Talking wasn't going to work at this point, it was far too late for that. I needed to just give my sister some space.
+I made my way over to the couch and sat down across from her and Harriet
+Silence loomed over all three of us for a few moments before Harriet managed to make things more uncomfortable by asking Dani what was wrong.
+What is wrong with you Harriet? Why would you ask something like that at a time like this?
+My sister however took the opportunity to finally let out all the pent up annoyance and frustration that had built up inside her since we came here. And of course since it was directed at me.
+"I hate this place, I'm bored all the time, the food sucks, the people are condescending, being locked up is prison here is terrible! I can't wait until we go home!"
+Talking while breathing heavily after her rant, my sister took a quick breather and stared at the two of us, however I quickly interrupted before she could continue.
+"Dani calm down we'll be-"
+"Don't tell me to calm down!"
+I was so stunned by her outburst that all I could do was blink owlishly for several seconds, Dani on the other hand realizing what she had done immediately tried to correct her mistake.
+Correcting it however only made things worse.
+"I'M SORRY I DON'T WANT TO GO HOME!" she yelled with tears beginning to form in the corner of her eyes, "I want to stay here and read ALL the books in this stupid library! I have so many books at home and I've already read all of them multiple times!"
+As her tears began falling and she curled into a fetal position on the couch Harriet and I finally decided to act.
+Acting separately we each put an arm around her in an attempt to calm her. Not speaking Harriet just continued to pat Dani on the back while I petted her hair, however it only succeeded in making matters worse.
+Wiping her eyes with the back of her hands she screamed at the both of us.
+"Don't touch me!" immediately withdrawing her arms and hands to her sides before crossing them for good measure.
+Touching her predicament, both Harriet and I backed off and gave her the personal space that she desired. She sniffled in mucus and wiped her tears off on the cuff of her robe before turning to me.
+"Do you know what I miss most?" Dani asked me, "I miss..." she said before pausing, closing her eyes while she bit down on her lip; a sure sign that she was struggling not to break down in tears again.
+Missing the obvious cue for Harriet and I to back off and give her space we both inched closer.
+"I miss... talking..." she started again, clarified as she wiped her eyes, "I know both of you are always here but I'm not allowed to talk to anybody else. There used to be this one girl in my class named Abigail that I talked to after class sometimes, but she moved last year."
+Comforting her, I pulled her into a hug as she continued.
+"We used to talk about the lessons and what we thought about them, but some of them I didn't agree with and I couldn't tell anyone... now..." Dani wiped more tears off of her face as she finished crying, "Now we can't talk about anything. No opinions except those of the master at the front of class." She stopped talking long enough to inhale and exhale a few times before continuing.
+Crying and talking seemed to have drained her, the overwhelming feelings were gone, all that was left was the occasional shaking. Turning to Harriet I saw a familiar glint shining in her eye.
+"We have too much time on our hands, we need more classes or something" She declared with ironclad certainty, as if daring either of us to debate the issue.
+While normally one to appease those in power, Dani seemed indifferent to Harriet's decree.
+Ending up being a bit too peppy for the situation, I asked "What new classes could we have here though? Peace and Love 2030 was the only relevant one and everyone but the headmistress unlocked their next lessons." My joke earned me a dirty look from both of the other women in the room.
+"If you had only studied instead of focusing on kissing during your free time then perhaps you too would've been blessed with the new knowledge that I received."
+Moving her hands in a gesturing fashion, and with her eyes closed as if deep in thought Harriet continued "In fact, we should all focus on peace and love..." she started to say before pausing midsentence. With an open mouth gasp she spoke again "Except you!" Turning an accusing finger at me with wide eyes she reprimanded "You should learn about Sin!"
+Arguing with Harriet was rarely a good idea and this was no exception, even Dani seemed to be on her side.
+After a scolding from both the women in his lives, bringing shame upon my family name and being called a "disgrace" I retreated to my room and checked the time, still an entire five and a half hours until the next intimacy session.
+Running out of television to watch I pulled out my phone, only to find I had no service this high up in the mountains. Consoling myself by lying on my bed and staring at the text book THAT Wyatt and Astarot used I got an idea. Maybe I could do what Harriet suggested and learn more about "Sin".
+Opening up the book I started reading...
+Shaming my intelligence from time to time with big words and old language the book reread the story I already knew. Nothing in particular stood out as "sin", every page was basically a long list of all the naughty things people did. By accident I found a folded piece of paper stuck in between the pages. Unfolding it I saw that it was a letter.
+Having thoroughly read the book already, I wanted to see if this held any more interest.
+Letter reading is something of a hobby of mine, I'm pretty good at it too. I wonder if it has anything to do with all the books I read growing up...
+'Dear Diary,' the letter began, 'I'm so glad mom made me bring this with me, writing in here is one of the few pleasures I have left. Dad and Mom don't know this, but Jack's been at his worst lately. Last night he came home from work and started screaming at Martha for nothing!
+Sinning, hah! Really the only thing I see here that could be classified as a sin would be gluttony, and even then only for people with less discipline than myself. Still worth reading I guess.
+Oh look food.' Getting distracted again, this time by the stark contrast between my inner thoughts and mouthwatering pictures of food on the cover. Reminds me of the restaurant we tried to go to before Harriet talked us into getting hotdogs...
+Regretting that I hadn't taken her up on her offer, I kept reading. If there's anything I learned from being Asian and in America is that distractions prevention is key to education!
+Eventually Harriet came to get me, it was time for 'pleasurable learning'. To be perfectly honest, I didn't find it all that pleasurable...perhaps it was because my mind kept wandering thinking about the letter I found. After we were finished I showered and returned to my room.
+Reading more of the letter I learned that the writer's name was Constance, and she was madly in love with a boy named Elliott. I kept reading and what seemed to be an innocent love letter turned dark.
+Elliott had been cheating on Constance with multiple girls at his school, because of this she wanted to break up with him despite her previous claims of him being "the one".
+Continuing on there were more passages, all of them saying how much she hated Elliott. One in particular talking about how he slept with entire field hockey team (Not courtsey of Wikipedia), and how he gave them a 'fictional' disease to mock her with.
+Her anger wasn't the only thing escalating, her writing did too. Eventually her desire for vengeance outweighed her hatred, and a plan for revenge began to formulate. The first step? Luring him into her house...
+Opening up my cell phone I called Sofia.
+"Moshi Moshi" she answered in her usual cheery voice. "Hello, Sofia? This is Alan...we need to talk..."
+Letter finding, diabolical revenge, a chaotic house- what's not to love?!
+Mianly I'm really proud of this project. But before I continue I'd like to thank my beta and best friend Kayla for helping me with this champion idea. Also a quick thanks to those who upvoted and provided feedback during my time on the subreddit. You helped shape PB into who he is today.
+Luring him into her house wasn't an easy task for Constance, it involved a lot of waiting around and being a stalker, but eventually she caught on to a pattern. Whenever he was lumberjacking she'd hide in the trees and wait, watching him chop wood; once he finished working he'd usually take a nap in his truck. After confirming this 'pattern' she began breaking into his truck and hiding under the dashboard.
+Planning to start the ignition and blast music once he got in, her revenge started there. Unfortunately something went wrong, maybe because it was his own personal truck rather than one of the work ones, and after only a few minutes into the napping lumberjack starting yelling.
+"STOP!" He yelled as soon as getting into the car. Once again she froze up completely during the attempt of killing him, he easily wrestle out of her grip and dragged her out of the truck by her hair.
+Kicking and screaming didn't save her, the only thing that did was a holy crucifix she had attached to her keys. Once he saw that he quickly backed off but not after flooring her with a punch to the face.
+"...that will teach you..." He sputtered while pointing at her as if she were some kind of offending object rather than a person. "You and your perverted cult can't do whatever you want..."
+Praying he'd leave and fearing he'd come back with his truck or worse his gun she quickly ran home (or what she assumed was her home). When she arrived pleading to her tape still worked, she avoided all of Mom's attacks, the woman was faster than anything she had seen before by far. Maybe that's why he seemed stronger too?
+The nightmares, impossible feats and warped version of reality...it finally sank in that this woman wasn't her biological mother.
+Planning on what to do next took over a week. She knew leaving the house was suicide with how quick and powerful her "mother" was. The underground room was her safe zone.
+She wanted to burn the house down but she didn't think she'd be able to get provisions and slip by undetected a second time, besides setting the house on fire would probably just call the attention of it's inhabitants to her presence, which would be bad.
+Luring him into the house was a good start, all she needed to do was prepare something similar for her 'mother'.
+The next step was planning, Constance lured him into the house over the course of many days, arranging accidents that were obviously designed to protect her. Once inside he finally believed he had caught her, almost immediately(Within less than a minute) of him entering the house Constance tackled him to the ground and wrapped zip ties around his wrists.
+Incapacitating him wasn't an easy task, it involved trapping him in the underground trauma room just like explained earlier. Wrapping a pig's bladder around his head before microwaveing it made him easier to knock out. Also beating someone with a dead animal always feels more satisfying.
+Him being incapacitated meant her time was limited. She had prepared everything with this moment in mind, organizing it all while he was lumberjacking and monitoring him on cameras.
+Locking the door behind her with a code so he couldn't unlock it, she pocketed the key and took the man's truck keys. With every intention in mind, she knew she was about to go on a suicide mission. But someone had to keep vigilant watch over her town.
+"Nobody can know."
+Driving at dangerous speeds down the country roads of Kansas she managed to get close to a diner in town. Throwing on a gray hoodie and some cap, she kept the mustard smeared face and messy hair as disguise. Heading into the diner her eyes darted around looking for an likely candidate.
+No one caught her interest...that is until a police officer got into his car. With a large build he would be perfect...
+Imagining that this was all some live action role play, she decided to put her life on the line to keep people safe from monsters like last time. Praying that it worked like last time, she snuck up to him as he sat in the car and sent her fist slamming into his jaw.
+She didn't bank on it not working at all and his body massed proved too much for her.
+Grasping at her throat, trying to claw out whatever puppet strings were controlling it. She could only watch as he grabbed her by the hair and began dragging her into his car.
+"Dispatch code one four seven, I have a code one four seven, I need back up..." He said into the walkie talkie.
+Amanda tried to scream but her control mechanism wouldn't allow her too.

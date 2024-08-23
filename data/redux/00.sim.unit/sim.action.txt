@@ -1,0 +1,10 @@
+import { Action } from "../00.core/interface/action.interface";
+import  {{=it.bitTitle}}  from "./fce/{{=it.nom}}.bit";
+
+export const {{=it.wakeActionKey}} = "[{{=it.actionLabel}} Action] {{=it.actionTitle}}";
+export class {{=it.wakeActionFunction}} implements Action {
+  readonly type = {{=it.wakeActionKey}};
+  constructor(public bale: {{=it.bitTitle}}) {}
+}
+
+export type Actions = {{=it.wakeActionFunction}};

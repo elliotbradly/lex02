@@ -1,0 +1,18 @@
+
+00//replace all the projects with the 000.main unit
+node terminal -t replace,effect/index
+
+01//copy the core into all the units
+node terminal -t copy,effect/index
+
+//update the BEE.ts file with all the units
+node terminal -t update,effect/index,001.beeing
+
+//create a unit
+node terminal -t create,effect/index,spin
+
+//copy youtube file 
+node terminal -t write,effect/tube
+
+//commit code, tweet, and line count
+node terminal -t write,effect/index,msg,type-commit-message-here

@@ -1,0 +1,17 @@
+export declare const AWAKE = "awake";
+export declare const CREATE = "create";
+export declare const COPY = "copy";
+export declare const CLOSE = "close";
+export declare const DELETE = "delete";
+export declare const INIT = "init";
+export declare const LIST = "list";
+export declare const LOAD = "load";
+export declare const MAKE = "make";
+export declare const QUE = "que";
+export declare const OPEN = "open";
+export declare const READ = "read";
+export declare const REPLACE = "replace";
+export declare const REMOVE = "remove";
+export declare const RESIZE = "resize";
+export declare const UPDATE = "update";
+export declare const WRITE = "write";
